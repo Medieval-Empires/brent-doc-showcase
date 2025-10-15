@@ -56,6 +56,17 @@ export const INDEX: EncyclopediaEntry[] = [
     blurb: "Defensive stand inside the capital; TNT breach; counter-attack; heavy French losses; disputed rumor of \"cheated\" items."
   },
   {
+    id: "league-of-nations",
+    title: "League of Nations",
+    section: "article-league",
+    date: "Founded 28 September 2025",
+    cat: "factions",
+    kicker: "Nations & Factions",
+    result: "International diplomatic organization",
+    tags: ["League of Nations", "Geneva", "Switzerland", "Japan", "diplomacy", "internationalism", "British Isles"],
+    blurb: "International organization founded by Japan to counter imperialism and establish diplomatic talks; 26 member nations; HQ in Geneva; stabilized British Isles after English civil war."
+  },
+  {
     id: "igc",
     title: "International Guild of Champions (IGC)",
     section: "article-igc",
@@ -63,7 +74,7 @@ export const INDEX: EncyclopediaEntry[] = [
     cat: "factions",
     kicker: "Nations & Factions",
     result: "Mercenary company operating across Europe",
-    tags: ["IGC", "Fintukani", "Kona", "Lithuania", "Zaire", "Wessex", "mercenaries", "Khedas", "Otryn", "DK"],
+    tags: ["IGC", "Fintukani", "Kona", "Lithuania", "Zaire", "Wessex", "mercenaries", "Khedas", "Ozryn", "DeKayeman"],
     blurb: "Free agent mercenary company founded by Fintukani; HQ in Liepāja, Lithuania; fought at Perth and London; notable for helping English states gain independence."
   },
   {

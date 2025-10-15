@@ -13,6 +13,7 @@ import { LondonArticle } from "@/components/articles/LondonArticle";
 import { WessexWarsArticle } from "@/components/articles/WessexWarsArticle";
 import { ByzantiumArticle } from "@/components/articles/ByzantiumArticle";
 import { IGCArticle } from "@/components/articles/IGCArticle";
+import { LeagueArticle } from "@/components/articles/LeagueArticle";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -55,6 +56,8 @@ const Index = () => {
         return <ByzantiumArticle onClose={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
       case "article-igc":
         return <IGCArticle onClose={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
+      case "article-league":
+        return <LeagueArticle onClose={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
       case "article-brent":
         return <BrentArticle onClose={() => setSelectedArticle(null)} />;
       default:
