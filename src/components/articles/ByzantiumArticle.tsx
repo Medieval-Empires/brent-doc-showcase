@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import byzantiumMap from "@/assets/byzantium-map-clean.png";
 
 export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void; onNavigate?: (articleId: string) => void }) {
   return (
+    <TooltipProvider>
     <div className="grid gap-6 lg:grid-cols-[1fr_340px]">
       <div>
         <Button variant="outline" onClick={onClose} className="mb-6">← Back to hub</Button>
@@ -37,14 +39,52 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
 
           <section>
             <h2 id="b-foundation" className="border-b border-border pb-2 text-2xl font-semibold">Foundation</h2>
-            <p className="mt-4">Greece was founded by <b>King apr1corn</b>, supported by his close advisors and friends <b>Tsunami</b> and <b>Panos</b>. These three figures would shape the early development of what would become the Byzantine Empire.</p>
+            <p className="mt-4">Greece was founded by{" "}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <b className="cursor-help underline decoration-dotted">King apr1corn</b>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                </TooltipContent>
+              </Tooltip>
+              , supported by his close advisors and friends{" "}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <b className="cursor-help underline decoration-dotted">Tsunami</b>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                </TooltipContent>
+              </Tooltip>
+              {" "}and{" "}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <b className="cursor-help underline decoration-dotted">Panos</b>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                </TooltipContent>
+              </Tooltip>
+              . These three figures would shape the early development of what would become the Byzantine Empire.
+            </p>
           </section>
 
           <section>
             <h2 id="b-evolution" className="border-b border-border pb-2 text-2xl font-semibold">Evolution and Expansion</h2>
             
             <h3 className="mt-4 text-lg font-semibold">Union with Rome</h3>
-            <p className="mt-2">Greece started off in less than modern-day Greece, then joined the <b>Roman Empire under Varo</b>, during which the Greek delegation was elected to the chair of consulship.</p>
+            <p className="mt-2">Greece started off in less than modern-day Greece, then joined the{" "}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <b className="cursor-help underline decoration-dotted">Roman Empire under Varo</b>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                </TooltipContent>
+              </Tooltip>
+              , during which the Greek delegation was elected to the chair of consulship.
+            </p>
 
             <h3 className="mt-6 text-lg font-semibold">Independence and the Byzantine Identity</h3>
             <p className="mt-2">After the dissolution of the Roman Empire under Varo, Greece gained independence and attempted a union with the Former <b>IBF</b> (Imperial Balkan Federation) in the name <b>Byzantium</b>. This union almost succeeded but stopped abruptly as the partition of the IBF began.</p>
@@ -64,7 +104,17 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
               {" "}(12 October 2025).</p>
 
             <h3 className="mt-6 text-lg font-semibold">Coalition Against Wessex</h3>
-            <p className="mt-2">Eventually, Byzantium allied with Rome in the coalition against <b>Wessex</b>. The campaign proved unsuccessful, with Byzantine forces suffering significant losses during the Battle of London. <b>Mechanical Mekanik</b>, the Protypourgos (Prime Minister), led Byzantine troops alongside the Knights of Nicosia.</p>
+            <p className="mt-2">Eventually, Byzantium allied with Rome in the coalition against <b>Wessex</b>. The campaign proved unsuccessful, with Byzantine forces suffering significant losses during the Battle of London.{" "}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <b className="cursor-help underline decoration-dotted">Mechanical Mekanik</b>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                </TooltipContent>
+              </Tooltip>
+              , the Protypourgos (Prime Minister), led Byzantine troops alongside the Knights of Nicosia.
+            </p>
 
             <h3 className="mt-6 text-lg font-semibold">Aftermath and Isolation</h3>
             <p className="mt-2">Following the defeat and Rome's betrayal—where the Empress withdrew support and engaged in back-channel deals—Byzantium found itself isolated from the outside world.</p>
@@ -143,5 +193,6 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
         </div>
       </aside>
     </div>
+    </TooltipProvider>
   );
 }

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ArrowLeft } from "lucide-react";
 
 interface WessexWarsArticleProps {
@@ -8,6 +9,7 @@ interface WessexWarsArticleProps {
 
 export const WessexWarsArticle = ({ onBack, onNavigate }: WessexWarsArticleProps) => {
   return (
+    <TooltipProvider>
     <div className="max-w-6xl mx-auto p-6">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Content */}
@@ -87,8 +89,34 @@ export const WessexWarsArticle = ({ onBack, onNavigate }: WessexWarsArticleProps
                   <p>
                     The chronological opening of the war saw Wessex and IGC forces execute a decisive raid on 
                     Australia's west coast. The engagement resulted in approximately 4 Australian and allied casualties 
-                    against 1 for Wessex-IGC forces. Key moments included erikas1234565 killing Xenov and Marci's 
-                    strategic escape. The battle forced Australia's withdrawal from the broader conflict.
+                    against 1 for Wessex-IGC forces. Key moments included{" "}
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <span className="cursor-help underline decoration-dotted font-medium">erikas1234565</span>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    {" "}killing{" "}
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <span className="cursor-help underline decoration-dotted font-medium">Xenov</span>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    {" "}and{" "}
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <span className="cursor-help underline decoration-dotted font-medium">Marci's</span>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    {" "}strategic escape. The battle forced Australia's withdrawal from the broader conflict.
                   </p>
                 </div>
 
@@ -105,7 +133,16 @@ export const WessexWarsArticle = ({ onBack, onNavigate }: WessexWarsArticleProps
                   <p>
                     Occurring approximately two hours after Perth, this brief engagement outside Rome's walls saw 
                     IGC forces probe Roman defenses. While Roman forces successfully defended, the incident resulted 
-                    in the death of Benijoe (TitledMoon) during a surprise strike. The IGC subsequently withdrew, 
+                    in the death of{" "}
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <span className="cursor-help underline decoration-dotted font-medium">Benijoe (TitledMoon)</span>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    {" "}during a surprise strike. The IGC subsequently withdrew, 
                     marking this as a minor Roman defensive success.
                   </p>
                 </div>
@@ -212,5 +249,6 @@ export const WessexWarsArticle = ({ onBack, onNavigate }: WessexWarsArticleProps
         </div>
       </div>
     </div>
+    </TooltipProvider>
   );
 };
