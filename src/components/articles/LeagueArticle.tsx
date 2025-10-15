@@ -63,7 +63,6 @@ export function LeagueArticle({ onClose, onNavigate }: { onClose: () => void; on
                     </button>
                   </li>
                   <li>France</li>
-                  <li>New France</li>
                   <li>German Empire</li>
                   <li>Kingdom of Poland</li>
                   <li>Unified Lithuanian Kingdom</li>
@@ -97,6 +96,7 @@ export function LeagueArticle({ onClose, onNavigate }: { onClose: () => void; on
                 <h3 className="text-lg font-semibold mb-2 mt-4">Other Regions</h3>
                 <ul className="ml-6 list-disc space-y-1 text-sm">
                   <li>Japanese Constitutional Empire</li>
+                  <li>New France</li>
                   <li>Zaire</li>
                   <li>Australia</li>
                   <li>Envultis</li>
