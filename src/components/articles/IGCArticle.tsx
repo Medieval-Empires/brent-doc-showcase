@@ -90,11 +90,11 @@ export function IGCArticle({ onClose, onNavigate }: { onClose: () => void; onNav
 
             <h3 className="mt-6 text-lg font-semibold">Elite Warriors</h3>
             <ul className="mt-2 ml-6 list-disc space-y-2">
-              <li><b>Otryn</b> — The elite warrior of Zaire; Commander of the 1st Squad</li>
+              <li><b>Ozryn</b> — The elite warrior of Zaire; Commander of the 1st Squad</li>
               <li><b>Khedas</b> (aka "the Kingslayer") — Distinguished field commander</li>
-              <li><b>DK (DaKaeyman)</b> — Best known for his 10 kills in the Battle of London</li>
+              <li><b>DeKayeman</b> — Best known for his 10 kills in the Battle of London</li>
               <li><b>Zyron</b> — Notable combatant</li>
-              <li><b>Benijee (TitledMoon)</b> — Supreme Leader of Zaire; fell during the Skirmish of Rome</li>
+              <li><b>Benijoe (TitledMoon)</b> — Supreme Leader of Zaire; fell during the Skirmish of Rome</li>
             </ul>
 
             <h3 className="mt-6 text-lg font-semibold">Soldiers from Lithuania</h3>
