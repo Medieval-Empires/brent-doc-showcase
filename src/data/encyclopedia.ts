@@ -56,6 +56,17 @@ export const INDEX: EncyclopediaEntry[] = [
     blurb: "Defensive stand inside the capital; TNT breach; counter-attack; heavy French losses; disputed rumor of \"cheated\" items."
   },
   {
+    id: "byzantium",
+    title: "Byzantine Empire",
+    section: "article-byzantium",
+    date: "Founded c. 2025",
+    cat: "factions",
+    kicker: "Nations & Factions",
+    result: "Regional power in Greece and Anatolia",
+    tags: ["Byzantium", "Greece", "apr1corn", "Tsunami", "Panos", "Mekanik", "Smyrna", "Nicaea", "Treaty of Tirana"],
+    blurb: "Formerly Greece, evolved into Byzantium under King apr1corn; 31 members; participated in invasion of England; signed Treaty of Tirana (14 Oct 2025)."
+  },
+  {
     id: "brent",
     title: "Brent Visitor Log — Official Ledger Copy",
     section: "article-brent",
