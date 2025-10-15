@@ -79,6 +79,9 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
             <h2 id="b-territory" className="border-b border-border pb-2 text-2xl font-semibold">Territory</h2>
             <div className="mt-4 rounded-lg border border-border overflow-hidden">
               <img src={byzantiumMap} alt="Map of Byzantine territorial holdings (Morava 02)" className="w-full" />
+              <p className="p-3 text-sm text-muted-foreground bg-card/50">
+                <em>Territorial map following the Treaty of Tirana (14 October 2025). The purple regions show Byzantine holdings across Greece and Anatolia.</em>
+              </p>
             </div>
             <p className="mt-4">Byzantine territory encompasses modern Greece and extends into western and northwestern Anatolia, including the administrative regions of Smyrna and Nicaea. The Treaty of Tirana further expanded Byzantine holdings.</p>
           </section>
