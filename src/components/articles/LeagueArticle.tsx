@@ -75,6 +75,9 @@ export function LeagueArticle({ onClose, onNavigate }: { onClose: () => void; on
                   <li>Greater Slovenian Empire</li>
                   <li>Icelandic Collective</li>
                   <li>Switzerland</li>
+                  <li>Roman Empire</li>
+                  <li>Golden Khaganate</li>
+                  <li>The Northern Triade</li>
                 </ul>
               </div>
 
@@ -94,13 +97,10 @@ export function LeagueArticle({ onClose, onNavigate }: { onClose: () => void; on
                 <h3 className="text-lg font-semibold mb-2 mt-4">Other Regions</h3>
                 <ul className="ml-6 list-disc space-y-1 text-sm">
                   <li>Japanese Constitutional Empire</li>
-                  <li>Roman Empire</li>
                   <li>Zaire</li>
                   <li>Australia</li>
-                  <li>Golden Khaganate</li>
                   <li>Envultis</li>
                   <li>Asnamo Dynasty</li>
-                  <li>The Northern Triade</li>
                 </ul>
               </div>
             </div>
