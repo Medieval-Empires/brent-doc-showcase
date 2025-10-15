@@ -114,7 +114,7 @@ const Index = () => {
                       <Badge 
                         key={tag}
                         variant="secondary"
-                        className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs"
+                        className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs text-[hsl(var(--gold))]"
                       >
                         {tag}
                       </Badge>
