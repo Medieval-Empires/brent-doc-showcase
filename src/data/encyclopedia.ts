@@ -56,6 +56,17 @@ export const INDEX: EncyclopediaEntry[] = [
     blurb: "Defensive stand inside the capital; TNT breach; counter-attack; heavy French losses; disputed rumor of \"cheated\" items."
   },
   {
+    id: "igc",
+    title: "International Guild of Champions (IGC)",
+    section: "article-igc",
+    date: "Founded 30 September 2025",
+    cat: "factions",
+    kicker: "Nations & Factions",
+    result: "Mercenary company operating across Europe",
+    tags: ["IGC", "Fintukani", "Kona", "Lithuania", "Zaire", "Wessex", "mercenaries", "Khedas", "Otryn", "DK"],
+    blurb: "Free agent mercenary company founded by Fintukani; HQ in Liepāja, Lithuania; fought at Perth and London; notable for helping English states gain independence."
+  },
+  {
     id: "byzantium",
     title: "Byzantine Empire",
     section: "article-byzantium",
