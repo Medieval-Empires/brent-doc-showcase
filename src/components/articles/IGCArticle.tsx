@@ -69,6 +69,15 @@ export function IGCArticle({ onClose, onNavigate }: { onClose: () => void; onNav
               , executing a decisive raid on Australia's west coast. The engagement demonstrated the effectiveness of IGC-Wessex coordination and resulted in a clear victory that forced Australia's withdrawal from the broader conflict.
             </p>
 
+            <h3 className="mt-6 text-lg font-semibold">Skirmish of Rome (7 October 2025)</h3>
+            <p className="mt-2">
+              Approximately two hours after Perth, an IGC detachment sailed to Rome in the{" "}
+              <button onClick={() => onNavigate?.('article-rome')} className="text-accent hover:underline font-semibold">
+                Skirmish of Rome
+              </button>
+              . The brief encounter outside Rome's walls resulted in the death of Benijoe (TitledMoon), Supreme Leader of Zaire, following a surprise strike by Roman defenders. The IGC withdrew after the unsuccessful engagement.
+            </p>
+
             <h3 className="mt-6 text-lg font-semibold">Battle of London (12 October 2025)</h3>
             <p className="mt-2">
               The IGC's most notable engagement came at the{" "}
@@ -163,7 +172,7 @@ export function IGCArticle({ onClose, onNavigate }: { onClose: () => void; onNav
           </div>
           <div>
             <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Major Engagements</h4>
-            <p>English Independence, Battle of Perth, Battle of London</p>
+            <p>English Independence, Battle of Perth, Skirmish of Rome, Battle of London</p>
           </div>
         </div>
       </aside>
