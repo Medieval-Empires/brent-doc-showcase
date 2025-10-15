@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export function RomeArticle({ onClose, onNavigate }: { onClose: () => void; onNavigate?: (articleId: string) => void }) {
   return (
-    <TooltipProvider>
     <div className="grid gap-6 lg:grid-cols-[1fr_340px]">
       <div>
         <Button variant="outline" onClick={onClose} className="mb-6">← Back to hub</Button>
@@ -48,37 +46,8 @@ export function RomeArticle({ onClose, onNavigate }: { onClose: () => void; onNa
 
           <section>
             <h2 id="r-battle" className="border-b border-border pb-2 text-2xl font-semibold">Skirmish</h2>
-            <p className="mt-4">
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <b className="cursor-help underline decoration-dotted">Marci</b>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
-                </TooltipContent>
-              </Tooltip>
-              {" "}initiated combat after talks broke down, striking first outside the castle walls. A short exchange followed; the IGC line held briefly but could not force entry.
-            </p>
-            <p className="mt-4 italic">During the clash, the Supreme Leader of Zaire,{" "}
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <b className="cursor-help underline decoration-dotted">Benijoe</b>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
-                </TooltipContent>
-              </Tooltip>
-              {" "}(alias{" "}
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <b className="cursor-help underline decoration-dotted">TitledMoon</b>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p className="max-w-xs text-xs">Most information is derived from biased biographies</p>
-                </TooltipContent>
-              </Tooltip>
-              ), fell in battle following the initial surprise strike by Roman defenders.
-            </p>
+            <p className="mt-4"><b>Marci</b> initiated combat after talks broke down, striking first outside the castle walls. A short exchange followed; the IGC line held briefly but could not force entry.</p>
+            <p className="mt-4 italic">During the clash, the Supreme Leader of Zaire, <b>Benijoe</b> (alias <b>TitledMoon</b>), fell in battle following the initial surprise strike by Roman defenders.</p>
           </section>
 
           <section>
@@ -144,6 +113,5 @@ export function RomeArticle({ onClose, onNavigate }: { onClose: () => void; onNa
         </div>
       </aside>
     </div>
-    </TooltipProvider>
   );
 }
