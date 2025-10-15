@@ -12,6 +12,17 @@ export interface EncyclopediaEntry {
 
 export const INDEX: EncyclopediaEntry[] = [
   {
+    id: "wessex-wars",
+    title: "Wessex Restoration Wars",
+    section: "article-wessex-wars",
+    date: "7-12 October 2025",
+    cat: "wars",
+    kicker: "Wars & Battles",
+    result: "Wessex victory; territorial restoration",
+    tags: ["Wessex", "IGC", "Australia", "Byzantine", "France", "Austria", "Denmark", "Rome", "Khaganate"],
+    blurb: "Series of conflicts resulting in Wessex reclaiming lost territories; includes Perth, Rome skirmish, and London battles."
+  },
+  {
     id: "perth",
     title: "Battle of Perth",
     section: "article-perth",

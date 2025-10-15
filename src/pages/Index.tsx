@@ -10,6 +10,7 @@ import { BrentArticle } from "@/components/articles/BrentArticle";
 import { PerthArticle } from "@/components/articles/PerthArticle";
 import { RomeArticle } from "@/components/articles/RomeArticle";
 import { LondonArticle } from "@/components/articles/LondonArticle";
+import { WessexWarsArticle } from "@/components/articles/WessexWarsArticle";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,6 +37,8 @@ const Index = () => {
 
   const renderArticle = () => {
     switch (selectedArticle) {
+      case "article-wessex-wars":
+        return <WessexWarsArticle onBack={() => setSelectedArticle(null)} />;
       case "article-perth":
         return <PerthArticle onClose={() => setSelectedArticle(null)} />;
       case "article-rome":
