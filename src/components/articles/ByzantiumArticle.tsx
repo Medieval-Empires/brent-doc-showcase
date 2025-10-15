@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import byzantiumMap from "@/assets/byzantium-map.png";
+import byzantiumMap from "@/assets/byzantium-map-clean.png";
 
 export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void; onNavigate?: (articleId: string) => void }) {
   return (
