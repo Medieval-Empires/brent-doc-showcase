@@ -64,7 +64,7 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
               {" "}(12 October 2025).</p>
 
             <h3 className="mt-6 text-lg font-semibold">Coalition Against Wessex</h3>
-            <p className="mt-2">Eventually, Byzantium allied with Rome in the coalition against <b>Wessex</b>. The campaign proved unsuccessful, with Byzantine forces suffering significant losses during the Battle of London. Field commander <b>Mechanical Mekanik</b> led Byzantine troops alongside the Knights of Nicosia.</p>
+            <p className="mt-2">Eventually, Byzantium allied with Rome in the coalition against <b>Wessex</b>. The campaign proved unsuccessful, with Byzantine forces suffering significant losses during the Battle of London. <b>Mechanical Mekanik</b>, the Protypourgos (Prime Minister), led Byzantine troops alongside the Knights of Nicosia.</p>
 
             <h3 className="mt-6 text-lg font-semibold">Aftermath and Isolation</h3>
             <p className="mt-2">Following the defeat and Rome's betrayal—where the Empress withdrew support and engaged in back-channel deals—Byzantium found itself isolated from the outside world.</p>
@@ -93,7 +93,7 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
             <ul className="mt-2 ml-6 list-disc space-y-1">
               <li><b>Monarch:</b> King apr1corn (founder)</li>
               <li><b>Advisors:</b> Tsunami, Panos</li>
-              <li><b>Field Commander:</b> Mechanical Mekanik</li>
+              <li><b>Protypourgos (Prime Minister):</b> Mechanical Mekanik</li>
             </ul>
 
             <h3 className="mt-6 text-lg font-semibold">Administrative Structure</h3>
