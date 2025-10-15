@@ -20,8 +20,9 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
           <div className="rounded-lg border border-border bg-card/50 p-6">
             <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
             <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#p-bg" className="text-accent hover:underline">Background</a></li>
-              <li><a href="#p-raid" className="text-accent hover:underline">The Raid</a></li>
+              <li><a href="#p-forces" className="text-accent hover:underline">Opposing forces</a></li>
+              <li><a href="#p-prelude" className="text-accent hover:underline">Prelude</a></li>
+              <li><a href="#p-battle" className="text-accent hover:underline">Battle</a></li>
               <li><a href="#p-strength" className="text-accent hover:underline">Strength</a></li>
               <li><a href="#p-cas" className="text-accent hover:underline">Casualties</a></li>
               <li><a href="#p-after" className="text-accent hover:underline">Aftermath</a></li>
@@ -29,14 +30,32 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
           </div>
 
           <section>
-            <h2 id="p-bg" className="border-b border-border pb-2 text-2xl font-semibold">Background</h2>
-            <p className="mt-4">Following raids by the Kingdom of Wessex and the International Guild Coalition (IGC) targeting Australian, Roman, and French holdings, an informal coalition assembled in response. Initial skirmishes escalated tensions, prompting direct action by <b>Will</b> (Wessex) and <b>Fintukani</b> (IGC leadership).</p>
+            <h2 id="p-forces" className="border-b border-border pb-2 text-2xl font-semibold">Opposing forces</h2>
+            
+            <h3 className="mt-4 text-lg font-semibold">Wessex and IGC</h3>
+            <ul className="mt-2 ml-6 list-disc space-y-1">
+              <li><b>Command:</b> Will (Wessex); Kingslayer Khedas (IGC); <b>Fintukani</b> (IGC overall coordination)</li>
+              <li><b>Notables:</b> erikas1234565 (Wessex)</li>
+            </ul>
+
+            <h3 className="mt-6 text-lg font-semibold">Opposition</h3>
+            <ul className="mt-2 ml-6 list-disc space-y-1">
+              <li><b>Australia:</b> 5 — <em>Commander:</em> <b>Ashesofaraven</b></li>
+              <li><b>Khaganate:</b> 5 — <em>Commander:</em> <b>Xenov</b></li>
+              <li><b>Rome:</b> Marci (arrived late, reportedly via Xenov)</li>
+              <li><b>Siege kit:</b> ad-hoc catapult</li>
+            </ul>
           </section>
 
           <section>
-            <h2 id="p-raid" className="border-b border-border pb-2 text-2xl font-semibold">The Raid</h2>
-            <p className="mt-4">A joint Wessex–IGC force arrived at Perth on the west coast. The raid began with an organized push against Australian defenders <b>Xenov</b>, <b>Ashesofaraven</b>, <b>erikas1234565</b>, and <b>Khedas</b>. The attackers advanced quickly, overwhelming local resistance.</p>
-            <p className="mt-4">Despite numerical inferiority, the Wessex–IGC force coordinated closely, exploiting defensive gaps and achieving a swift tactical success. Australian forces withdrew, and the territory fell under temporary Wessex control.</p>
+            <h2 id="p-prelude" className="border-b border-border pb-2 text-2xl font-semibold">Prelude</h2>
+            <p className="mt-4">With war declared a day prior, the expedition moved rapidly by sea and made contact near Perth's approaches.</p>
+          </section>
+
+          <section>
+            <h2 id="p-battle" className="border-b border-border pb-2 text-2xl font-semibold">Battle</h2>
+            <p className="mt-4">The Australians and Khaganate were attacked <b>head-on from the west</b> by the combined <b>Wessex and IGC</b> forces, <b>pushing them inward</b>. After all soldiers from the Khaganate and Australia — including <b>Xenov</b> and <b>Ashesofaraven</b> — were killed, the allied force <b>chased Marci to the ocean</b>, where he subsequently escaped by sea.</p>
+            <p className="mt-4"><b>Turning point:</b> <b>erikas1234565</b> reportedly <b>killed Xenov</b>, shattering enemy morale. Two Wessex/IGC soldiers fell in the fight.</p>
           </section>
 
           <section>
@@ -46,17 +65,17 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
                 <TableHeader>
                   <TableRow>
                     <TableHead>Side</TableHead>
-                    <TableHead>Forces</TableHead>
+                    <TableHead>Composition</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="font-medium">Wessex & IGC (attackers)</TableCell>
-                    <TableCell>~6 combatants</TableCell>
+                    <TableCell className="font-medium">Wessex & IGC</TableCell>
+                    <TableCell>Expeditionary detachment (headcount undisclosed)</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Australia & allies (defenders)</TableCell>
-                    <TableCell>~4 combatants</TableCell>
+                    <TableCell className="font-medium">Opposition</TableCell>
+                    <TableCell>Australia (5); Khaganate (5); Rome (Marci, late); catapult</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -75,12 +94,16 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="font-medium">Wessex & IGC</TableCell>
-                    <TableCell>~1 killed</TableCell>
+                    <TableCell className="font-medium">Australia & Khaganate</TableCell>
+                    <TableCell>10 killed</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Australia & allies</TableCell>
-                    <TableCell>~4 killed</TableCell>
+                    <TableCell className="font-medium">Wessex & IGC</TableCell>
+                    <TableCell>2 killed</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium">Rome</TableCell>
+                    <TableCell>Marci escaped by sea</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
