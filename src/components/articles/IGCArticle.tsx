@@ -119,7 +119,7 @@ export function IGCArticle({ onClose, onNavigate }: { onClose: () => void; onNav
             <ul className="mt-2 ml-6 list-disc space-y-2">
               <li><b>Company Leader:</b> Fintukani (overall command and strategic direction)</li>
               <li><b>Second in Command:</b> Kona (operational support and coordination)</li>
-              <li><b>Squad Commanders:</b> Officers like Otryn lead specialized units</li>
+              <li><b>Squad Commanders:</b> Officers like Ozryn lead specialized units</li>
               <li><b>Elite Warriors:</b> Highly skilled individuals like Khedas and DK</li>
               <li><b>Regular Soldiers:</b> Professional fighters from various backgrounds</li>
             </ul>
