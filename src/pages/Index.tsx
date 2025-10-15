@@ -154,7 +154,7 @@ const Index = () => {
       </main>
 
       <footer className="mt-8 border-t border-border p-4 text-center text-muted-foreground">
-        © Medieval Empires Encyclopedia — Works offline.
+        © Medieval Empires Encyclopedia
       </footer>
 
       {/* Article Dialog */}
