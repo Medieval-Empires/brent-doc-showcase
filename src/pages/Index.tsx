@@ -17,6 +17,10 @@ const Index = () => {
   const [activeCat, setActiveCat] = useState<string>("all");
   const [selectedArticle, setSelectedArticle] = useState<string | null>(null);
 
+  const handleNavigateToArticle = (articleId: string) => {
+    setSelectedArticle(articleId);
+  };
+
   const filteredList = INDEX.filter((entry) => {
     const catMatch = activeCat === "all" || entry.cat === activeCat;
     if (!catMatch) return false;
@@ -38,13 +42,13 @@ const Index = () => {
   const renderArticle = () => {
     switch (selectedArticle) {
       case "article-wessex-wars":
-        return <WessexWarsArticle onBack={() => setSelectedArticle(null)} />;
+        return <WessexWarsArticle onBack={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
       case "article-perth":
-        return <PerthArticle onClose={() => setSelectedArticle(null)} />;
+        return <PerthArticle onClose={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
       case "article-rome":
-        return <RomeArticle onClose={() => setSelectedArticle(null)} />;
+        return <RomeArticle onClose={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
       case "article-london":
-        return <LondonArticle onClose={() => setSelectedArticle(null)} />;
+        return <LondonArticle onClose={() => setSelectedArticle(null)} onNavigate={handleNavigateToArticle} />;
       case "article-brent":
         return <BrentArticle onClose={() => setSelectedArticle(null)} />;
       default:

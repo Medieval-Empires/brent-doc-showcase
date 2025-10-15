@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow, TableFooter } from "@/components/ui/table";
 
-export function LondonArticle({ onClose }: { onClose: () => void }) {
+export function LondonArticle({ onClose, onNavigate }: { onClose: () => void; onNavigate?: (articleId: string) => void }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_340px]">
       <div>

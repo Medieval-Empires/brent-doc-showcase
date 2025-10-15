@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-export function PerthArticle({ onClose }: { onClose: () => void }) {
+export function PerthArticle({ onClose, onNavigate }: { onClose: () => void; onNavigate?: (articleId: string) => void }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_340px]">
       <div>
@@ -112,7 +112,17 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
 
           <section>
             <h2 id="p-after" className="border-b border-border pb-2 text-2xl font-semibold">Aftermath</h2>
-            <p className="mt-4"><b>Australia withdrew from further hostilities.</b> The raid succeeded in securing western holdings and demonstrated the effectiveness of Wessex–IGC coordination. This engagement set the stage for subsequent operations at Rome and London.</p>
+            <p className="mt-4">
+              <b>Australia withdrew from further hostilities.</b> The raid succeeded in securing western holdings and demonstrated the effectiveness of Wessex–IGC coordination. This engagement set the stage for subsequent operations at{" "}
+              <button onClick={() => onNavigate?.('article-rome')} className="text-accent hover:underline font-semibold">
+                Rome
+              </button>
+              {" "}and{" "}
+              <button onClick={() => onNavigate?.('article-london')} className="text-accent hover:underline font-semibold">
+                London
+              </button>
+              .
+            </p>
           </section>
         </article>
       </div>

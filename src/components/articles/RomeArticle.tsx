@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-export function RomeArticle({ onClose }: { onClose: () => void }) {
+export function RomeArticle({ onClose, onNavigate }: { onClose: () => void; onNavigate?: (articleId: string) => void }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_340px]">
       <div>
@@ -30,7 +30,13 @@ export function RomeArticle({ onClose }: { onClose: () => void }) {
 
           <section>
             <h2 id="r-context" className="border-b border-border pb-2 text-2xl font-semibold">Context</h2>
-            <p className="mt-4">Approximately <b>two hours</b> after the raid on Perth, an IGC detachment sailed to Rome. The stated aim was to "deliver a warrant" and demand audience with Roman leadership. Diplomatic cover masked what became a brief but violent encounter.</p>
+            <p className="mt-4">
+              Approximately <b>two hours</b> after the{" "}
+              <button onClick={() => onNavigate?.('article-perth')} className="text-accent hover:underline font-semibold">
+                raid on Perth
+              </button>
+              , an IGC detachment sailed to Rome. The stated aim was to "deliver a warrant" and demand audience with Roman leadership. Diplomatic cover masked what became a brief but violent encounter.
+            </p>
           </section>
 
           <section>
@@ -70,7 +76,17 @@ export function RomeArticle({ onClose }: { onClose: () => void }) {
 
           <section>
             <h2 id="r-outcome" className="border-b border-border pb-2 text-2xl font-semibold">Outcome</h2>
-            <p className="mt-4"><b>Minor Roman defensive success.</b> The IGC task force withdrew to sea to avoid entrapment. The action is widely considered a small incident compared with Perth and London.</p>
+            <p className="mt-4">
+              <b>Minor Roman defensive success.</b> The IGC task force withdrew to sea to avoid entrapment. The action is widely considered a small incident compared with{" "}
+              <button onClick={() => onNavigate?.('article-perth')} className="text-accent hover:underline font-semibold">
+                Perth
+              </button>
+              {" "}and{" "}
+              <button onClick={() => onNavigate?.('article-london')} className="text-accent hover:underline font-semibold">
+                London
+              </button>
+              .
+            </p>
           </section>
         </article>
       </div>

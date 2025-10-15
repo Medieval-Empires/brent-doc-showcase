@@ -3,9 +3,10 @@ import { ArrowLeft } from "lucide-react";
 
 interface WessexWarsArticleProps {
   onBack: () => void;
+  onNavigate?: (articleId: string) => void;
 }
 
-export const WessexWarsArticle = ({ onBack }: WessexWarsArticleProps) => {
+export const WessexWarsArticle = ({ onBack, onNavigate }: WessexWarsArticleProps) => {
   return (
     <div className="max-w-6xl mx-auto p-6">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -74,7 +75,15 @@ export const WessexWarsArticle = ({ onBack }: WessexWarsArticleProps) => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Battle of Perth (7 October)</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    <button 
+                      onClick={() => onNavigate?.('article-perth')}
+                      className="text-accent hover:underline cursor-pointer"
+                    >
+                      Battle of Perth
+                    </button>
+                    {" "}(7 October)
+                  </h3>
                   <p>
                     The chronological opening of the war saw Wessex and IGC forces execute a decisive raid on 
                     Australia's west coast. The engagement resulted in approximately 4 Australian and allied casualties 
@@ -84,7 +93,15 @@ export const WessexWarsArticle = ({ onBack }: WessexWarsArticleProps) => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Skirmish of Rome (7 October)</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    <button 
+                      onClick={() => onNavigate?.('article-rome')}
+                      className="text-accent hover:underline cursor-pointer"
+                    >
+                      Skirmish of Rome
+                    </button>
+                    {" "}(7 October)
+                  </h3>
                   <p>
                     Occurring approximately two hours after Perth, this brief engagement outside Rome's walls saw 
                     IGC forces probe Roman defenses. While Roman forces successfully defended, the incident resulted 
@@ -94,7 +111,15 @@ export const WessexWarsArticle = ({ onBack }: WessexWarsArticleProps) => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Battle of London (12 October)</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    <button 
+                      onClick={() => onNavigate?.('article-london')}
+                      className="text-accent hover:underline cursor-pointer"
+                    >
+                      Battle of London
+                    </button>
+                    {" "}(12 October)
+                  </h3>
                   <p>
                     The decisive engagement of the war saw Wessex defend their capital against a major coalition assault 
                     involving Byzantine, French, Austrian, and Danish forces. Despite a TNT breach of the city's defenses, 
@@ -146,9 +171,24 @@ export const WessexWarsArticle = ({ onBack }: WessexWarsArticleProps) => {
                 <div className="font-semibold text-muted-foreground">Major Battles</div>
                 <div>
                   <ul className="list-disc list-inside space-y-1">
-                    <li>Battle of Perth (7 Oct)</li>
-                    <li>Skirmish of Rome (7 Oct)</li>
-                    <li>Battle of London (12 Oct)</li>
+                    <li>
+                      <button onClick={() => onNavigate?.('article-perth')} className="text-accent hover:underline">
+                        Battle of Perth
+                      </button>
+                      {" "}(7 Oct)
+                    </li>
+                    <li>
+                      <button onClick={() => onNavigate?.('article-rome')} className="text-accent hover:underline">
+                        Skirmish of Rome
+                      </button>
+                      {" "}(7 Oct)
+                    </li>
+                    <li>
+                      <button onClick={() => onNavigate?.('article-london')} className="text-accent hover:underline">
+                        Battle of London
+                      </button>
+                      {" "}(12 Oct)
+                    </li>
                   </ul>
                 </div>
               </div>
