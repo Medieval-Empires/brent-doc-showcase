@@ -47,7 +47,7 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
             <p className="mt-2">Greece started off in less than modern-day Greece, then joined the <b>Roman Empire under Varo</b>, during which the Greek delegation was elected to the chair of consulship.</p>
 
             <h3 className="mt-6 text-lg font-semibold">Independence and the Byzantine Identity</h3>
-            <p className="mt-2">After the dissolution of the Roman Empire under Varo, Greece gained independence and attempted a union with the Former <b>IBF</b> (International Brotherhood Federation) in the name <b>Byzantium</b>. This union almost succeeded but stopped abruptly as the partition of the IBF began.</p>
+            <p className="mt-2">After the dissolution of the Roman Empire under Varo, Greece gained independence and attempted a union with the Former <b>IBF</b> (Imperial Balkan Federation) in the name <b>Byzantium</b>. This union almost succeeded but stopped abruptly as the partition of the IBF began.</p>
 
             <h3 className="mt-6 text-lg font-semibold">Territorial Expansion</h3>
             <p className="mt-2">Following the IBF partition, Byzantium colonized <b>western and northwestern Anatolia</b>, forming the local governments of <b>Smyrna</b> and <b>Nicaea</b>. The empire had fluctuating alliances with Rome and the United Nations, switching sides several times.</p>
