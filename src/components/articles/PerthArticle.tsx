@@ -52,11 +52,11 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">Wessex & IGC (attackers)</TableCell>
-                    <TableCell>~6–8 combatants</TableCell>
+                    <TableCell>~6 combatants</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Australia & allies (defenders)</TableCell>
-                    <TableCell>~4–5 combatants</TableCell>
+                    <TableCell>~4 combatants</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -76,11 +76,11 @@ export function PerthArticle({ onClose }: { onClose: () => void }) {
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">Wessex & IGC</TableCell>
-                    <TableCell>1–2 killed</TableCell>
+                    <TableCell>~1 killed</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">Australia & allies</TableCell>
-                    <TableCell>3–4 killed</TableCell>
+                    <TableCell>~4 killed</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

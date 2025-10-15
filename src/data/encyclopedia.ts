@@ -45,39 +45,6 @@ export const INDEX: EncyclopediaEntry[] = [
     blurb: "Defensive stand inside the capital; TNT breach; counter-attack; heavy French losses; disputed rumor of \"cheated\" items."
   },
   {
-    id: "figures",
-    title: "Commanders & Figures",
-    section: "article-placeholder-figures",
-    date: "—",
-    cat: "figures",
-    kicker: "Encyclopedia",
-    result: "Biographical index (in progress)",
-    tags: ["leaders", "officers", "eyewitnesses"],
-    blurb: "Profiles for key personalities across the setting."
-  },
-  {
-    id: "factions",
-    title: "Nations & Factions",
-    section: "article-placeholder-factions",
-    date: "—",
-    cat: "factions",
-    kicker: "Encyclopedia",
-    result: "Political and military entities",
-    tags: ["Wessex", "IGC", "Zaire", "Rome", "Byzantium", "Austria", "France", "Denmark", "Nicosia", "Khaganate"],
-    blurb: "Histories, alliances, doctrines, and equipment."
-  },
-  {
-    id: "docs",
-    title: "Chronicles & Documents",
-    section: "article-placeholder-docs",
-    date: "—",
-    cat: "docs",
-    kicker: "Encyclopedia",
-    result: "Primary sources & records",
-    tags: ["dispatches", "orders", "AAR", "quotes"],
-    blurb: "Transcripts, orders of battle, and after-action reports."
-  },
-  {
     id: "brent",
     title: "Brent Visitor Log — Official Ledger Copy",
     section: "article-brent",
