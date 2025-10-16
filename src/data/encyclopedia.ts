@@ -107,7 +107,7 @@ export const INDEX: EncyclopediaEntry[] = [
     cat: "factions",
     kicker: "Nations & Factions",
     result: "Monarchy led by Queen and Don von Craft",
-    tags: ["Netherlands", "DSK_Sayan", "Kanzo", "Queen Elizabeth", "Don von Craft", "Silver Queen", "Manji", "Order of the Black Lion"],
+    tags: ["Netherlands", "DSK_Sayan", "Kanzo", "Acht", "Queen Elizabeth", "Don von Craft", "Silver Queen", "Manji", "Order of the Black Lion"],
     blurb: "Nation formed after the Western Federation's collapse; ruled by Queen (Manji's advisor) and Don von Craft; descended from Silver and Golden Queens; led Dutch elite mercenaries."
   }
 ];
