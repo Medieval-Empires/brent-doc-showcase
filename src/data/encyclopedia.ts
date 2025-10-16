@@ -98,5 +98,16 @@ export const INDEX: EncyclopediaEntry[] = [
     result: "Administrative visitor records from Brent Island",
     tags: ["Brent", "administrative", "visitor log", "island port", "records"],
     blurb: "Compiled from island port and administrative records between 28 September and 10 October 2025."
+  },
+  {
+    id: "netherlands",
+    title: "The Netherlands",
+    section: "article-netherlands",
+    date: "Founded after fall of Western Federation",
+    cat: "factions",
+    kicker: "Nations & Factions",
+    result: "Monarchy led by Queen and Don von Craft",
+    tags: ["Netherlands", "DSK_Sayan", "Kanzo", "Queen Elizabeth", "Don von Craft", "Silver Queen", "Manji", "Order of the Black Lion"],
+    blurb: "Nation formed after the Western Federation's collapse; ruled by Queen (Manji's advisor) and Don von Craft; descended from Silver and Golden Queens; led Dutch elite mercenaries."
   }
 ];
