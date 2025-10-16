@@ -37,7 +37,10 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
 
           <section>
             <h2 id="b-foundation" className="border-b border-border pb-2 text-2xl font-semibold">Foundation</h2>
-            <p className="mt-4">Greece was founded by <b>King apr1corn</b>, supported by his close advisors and friends <b>Tsunami</b> and <b>Panos</b>. These three figures would shape the early development of what would become the Byzantine Empire.</p>
+            <p className="mt-4">Greece was founded by{" "}
+              <button onClick={() => onNavigate?.('article-apr1corn')} className="text-accent hover:underline font-semibold">
+                King apr1corn
+              </button>, supported by his close advisors and friends <b>Tsunami</b> and <b>Panos</b>. These three figures would shape the early development of what would become the Byzantine Empire.</p>
           </section>
 
           <section>
@@ -91,7 +94,10 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
             
             <h3 className="mt-4 text-lg font-semibold">Leadership</h3>
             <ul className="mt-2 ml-6 list-disc space-y-1">
-              <li><b>Monarch:</b> King apr1corn (founder)</li>
+              <li><b>Monarch:</b>{" "}
+                <button onClick={() => onNavigate?.('article-apr1corn')} className="text-accent hover:underline font-semibold">
+                  King apr1corn
+                </button>{" "}(founder)</li>
               <li><b>Advisors:</b> Tsunami, Panos</li>
               <li><b>Protypourgos (Prime Minister):</b> Mechanical Mekanik</li>
             </ul>
@@ -130,7 +136,9 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
           </div>
           <div>
             <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Monarch</h4>
-            <p>King apr1corn</p>
+            <button onClick={() => onNavigate?.('article-apr1corn')} className="text-accent hover:underline">
+              King apr1corn
+            </button>
           </div>
           <div>
             <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Members</h4>

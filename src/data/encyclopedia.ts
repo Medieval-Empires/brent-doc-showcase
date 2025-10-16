@@ -109,5 +109,16 @@ export const INDEX: EncyclopediaEntry[] = [
     result: "Monarchy led by Queen and Don von Craft",
     tags: ["Netherlands", "DSK_Sayan", "Kanzo", "Acht", "Queen Elizabeth", "Don von Craft", "Silver Queen", "Manji", "Order of the Black Lion"],
     blurb: "Nation formed after the Western Federation's collapse; ruled by Queen (Manji's advisor) and Don von Craft; descended from Silver and Golden Queens; led Dutch elite mercenaries."
+  },
+  {
+    id: "apr1corn",
+    title: "Apr1c0rn",
+    section: "article-apr1corn",
+    date: "Born 31 August 2008",
+    cat: "figures",
+    kicker: "Commanders & Figures",
+    result: "Emperor of the Byzantines",
+    tags: ["Apr1c0rn", "Byzantine Empire", "Constantine XII", "Athens", "Strategos", "The Reforger", "Justinian I", "Hellenic Kingdom"],
+    blurb: "Born in Athens, son of King Constantine XII; became Strategos at age 16; crowned Emperor of Byzantines on 8 October 2025; known as 'The Reforger' for restoring the Byzantine Empire."
   }
 ];
