@@ -20,13 +20,13 @@ export function ByzantiumArticle({ onClose, onNavigate }: { onClose: () => void;
           <div className="rounded-lg border border-border bg-card/50 p-6">
             <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
             <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#b-origins" className="text-accent hover:underline">Origins as Greece</a></li>
-              <li><a href="#b-foundation" className="text-accent hover:underline">Foundation</a></li>
-              <li><a href="#b-evolution" className="text-accent hover:underline">Evolution and Expansion</a></li>
-              <li><a href="#b-wars" className="text-accent hover:underline">Military Campaigns</a></li>
-              <li><a href="#b-tirana" className="text-accent hover:underline">Treaty of Tirana</a></li>
-              <li><a href="#b-territory" className="text-accent hover:underline">Territory</a></li>
-              <li><a href="#b-government" className="text-accent hover:underline">Government</a></li>
+              <li><button onClick={() => document.getElementById('b-origins')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Origins as Greece</button></li>
+              <li><button onClick={() => document.getElementById('b-foundation')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Foundation</button></li>
+              <li><button onClick={() => document.getElementById('b-evolution')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Evolution and Expansion</button></li>
+              <li><button onClick={() => document.getElementById('b-wars')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Military Campaigns</button></li>
+              <li><button onClick={() => document.getElementById('b-tirana')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Treaty of Tirana</button></li>
+              <li><button onClick={() => document.getElementById('b-territory')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Territory</button></li>
+              <li><button onClick={() => document.getElementById('b-government')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">Government</button></li>
             </ol>
           </div>
 

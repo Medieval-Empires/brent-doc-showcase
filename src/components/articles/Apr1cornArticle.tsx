@@ -36,11 +36,31 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
         <div className="rounded-lg border border-border bg-card/50 p-6">
           <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
           <ol className="ml-5 list-decimal space-y-1 text-sm">
-            <li><a href="#early-life" className="text-accent hover:underline">Early Life: The Child Of The Athenian King</a></li>
-            <li><a href="#rise-byzantine" className="text-accent hover:underline">The Rise of the Byzantine Empire</a></li>
-            <li><a href="#reign-light" className="text-accent hover:underline">The Reign of Light (Present)</a></li>
-            <li><a href="#legacy" className="text-accent hover:underline">Legacy of Apr1c0rn</a></li>
-            <li><a href="#key-info" className="text-accent hover:underline">Key Information</a></li>
+            <li>
+              <button onClick={() => document.getElementById('early-life')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
+                Early Life: The Child Of The Athenian King
+              </button>
+            </li>
+            <li>
+              <button onClick={() => document.getElementById('rise-byzantine')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
+                The Rise of the Byzantine Empire
+              </button>
+            </li>
+            <li>
+              <button onClick={() => document.getElementById('reign-light')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
+                The Reign of Light (Present)
+              </button>
+            </li>
+            <li>
+              <button onClick={() => document.getElementById('legacy')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
+                Legacy of Apr1c0rn
+              </button>
+            </li>
+            <li>
+              <button onClick={() => document.getElementById('key-info')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
+                Key Information
+              </button>
+            </li>
           </ol>
         </div>
 
