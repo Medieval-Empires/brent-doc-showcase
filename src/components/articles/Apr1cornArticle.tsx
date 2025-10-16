@@ -32,37 +32,6 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
           </div>
         </header>
 
-        {/* Table of Contents */}
-        <div className="rounded-lg border border-border bg-card/50 p-6">
-          <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
-          <ol className="ml-5 list-decimal space-y-1 text-sm">
-            <li>
-              <button onClick={() => document.getElementById('early-life')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
-                Early Life: The Child Of The Athenian King
-              </button>
-            </li>
-            <li>
-              <button onClick={() => document.getElementById('rise-byzantine')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
-                The Rise of the Byzantine Empire
-              </button>
-            </li>
-            <li>
-              <button onClick={() => document.getElementById('reign-light')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
-                The Reign of Light (Present)
-              </button>
-            </li>
-            <li>
-              <button onClick={() => document.getElementById('legacy')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
-                Legacy of Apr1c0rn
-              </button>
-            </li>
-            <li>
-              <button onClick={() => document.getElementById('key-info')?.scrollIntoView({ behavior: 'smooth' })} className="text-accent hover:underline text-left">
-                Key Information
-              </button>
-            </li>
-          </ol>
-        </div>
 
         {/* Early Life */}
         <section id="early-life">

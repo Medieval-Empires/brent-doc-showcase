@@ -16,16 +16,6 @@ export function IGCArticle({ onClose, onNavigate }: { onClose: () => void; onNav
             </div>
           </div>
 
-          <div className="rounded-lg border border-border bg-card/50 p-6">
-            <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
-            <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#igc-creation" className="text-accent hover:underline">Creation</a></li>
-              <li><a href="#igc-operations" className="text-accent hover:underline">Operations</a></li>
-              <li><a href="#igc-history" className="text-accent hover:underline">Military History</a></li>
-              <li><a href="#igc-members" className="text-accent hover:underline">Notable Members</a></li>
-              <li><a href="#igc-structure" className="text-accent hover:underline">Structure</a></li>
-            </ol>
-          </div>
 
           <section>
             <h2 id="igc-creation" className="border-b border-border pb-2 text-2xl font-semibold">Creation</h2>

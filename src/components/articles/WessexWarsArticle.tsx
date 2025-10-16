@@ -30,16 +30,6 @@ export const WessexWarsArticle = ({ onBack, onNavigate }: WessexWarsArticleProps
               culminating in the restoration of Wessex territorial control and the dissolution of hostile coalitions.
             </p>
 
-            {/* Table of Contents */}
-            <div className="bg-muted/50 p-4 rounded-lg mb-8">
-              <h3 className="text-sm font-semibold mb-2">Contents</h3>
-              <ol className="text-sm space-y-1 list-decimal list-inside">
-                <li><a href="#overview" className="hover:underline">Overview</a></li>
-                <li><a href="#background" className="hover:underline">Background</a></li>
-                <li><a href="#major-battles" className="hover:underline">Major Battles</a></li>
-                <li><a href="#outcome" className="hover:underline">Outcome and Aftermath</a></li>
-              </ol>
-            </div>
 
             <section id="overview" className="mb-8">
               <h2 className="text-2xl font-bold mb-4">Overview</h2>

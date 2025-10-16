@@ -16,16 +16,6 @@ export function LeagueArticle({ onClose, onNavigate }: { onClose: () => void; on
             </div>
           </div>
 
-          <div className="rounded-lg border border-border bg-card/50 p-6">
-            <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
-            <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#lon-foundation" className="text-accent hover:underline">Foundation</a></li>
-              <li><a href="#lon-purpose" className="text-accent hover:underline">Purpose and Mission</a></li>
-              <li><a href="#lon-members" className="text-accent hover:underline">Member Nations</a></li>
-              <li><a href="#lon-achievements" className="text-accent hover:underline">Key Achievements</a></li>
-              <li><a href="#lon-structure" className="text-accent hover:underline">Organization</a></li>
-            </ol>
-          </div>
 
           <section>
             <h2 id="lon-foundation" className="border-b border-border pb-2 text-2xl font-semibold">Foundation</h2>

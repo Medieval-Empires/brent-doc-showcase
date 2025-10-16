@@ -17,16 +17,6 @@ export function RomeArticle({ onClose, onNavigate }: { onClose: () => void; onNa
             </div>
           </div>
 
-          <div className="rounded-lg border border-border bg-card/50 p-6">
-            <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
-            <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#r-context" className="text-accent hover:underline">Context</a></li>
-              <li><a href="#r-prelude" className="text-accent hover:underline">Approach</a></li>
-              <li><a href="#r-battle" className="text-accent hover:underline">Skirmish</a></li>
-              <li><a href="#r-cas" className="text-accent hover:underline">Casualties</a></li>
-              <li><a href="#r-outcome" className="text-accent hover:underline">Outcome</a></li>
-            </ol>
-          </div>
 
           <section>
             <h2 id="r-context" className="border-b border-border pb-2 text-2xl font-semibold">Context</h2>

@@ -17,21 +17,6 @@ export function LondonArticle({ onClose, onNavigate }: { onClose: () => void; on
             </div>
           </div>
 
-          <div className="rounded-lg border border-border bg-card/50 p-6">
-            <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
-            <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#l-bg" className="text-accent hover:underline">Background</a></li>
-              <li><a href="#l-forces" className="text-accent hover:underline">Opposing forces</a></li>
-              <li><a href="#l-prelude" className="text-accent hover:underline">Prelude</a></li>
-              <li><a href="#l-battle" className="text-accent hover:underline">Battle</a></li>
-              <li><a href="#l-strength" className="text-accent hover:underline">Strength</a></li>
-              <li><a href="#l-cas" className="text-accent hover:underline">Casualties</a></li>
-              <li><a href="#l-acc" className="text-accent hover:underline">Personal accounts</a></li>
-              <li><a href="#l-after" className="text-accent hover:underline">Aftermath</a></li>
-              <li><a href="#l-notes" className="text-accent hover:underline">Notes</a></li>
-              <li><a href="#l-source" className="text-accent hover:underline">Primary Source Excerpt</a></li>
-            </ol>
-          </div>
 
           <section>
             <h2 id="l-bg" className="border-b border-border pb-2 text-2xl font-semibold">Background</h2>

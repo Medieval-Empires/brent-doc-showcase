@@ -17,17 +17,6 @@ export function PerthArticle({ onClose, onNavigate }: { onClose: () => void; onN
             </div>
           </div>
 
-          <div className="rounded-lg border border-border bg-card/50 p-6">
-            <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
-            <ol className="ml-5 list-decimal space-y-1 text-sm">
-              <li><a href="#p-forces" className="text-accent hover:underline">Opposing forces</a></li>
-              <li><a href="#p-prelude" className="text-accent hover:underline">Prelude</a></li>
-              <li><a href="#p-battle" className="text-accent hover:underline">Battle</a></li>
-              <li><a href="#p-strength" className="text-accent hover:underline">Strength</a></li>
-              <li><a href="#p-cas" className="text-accent hover:underline">Casualties</a></li>
-              <li><a href="#p-after" className="text-accent hover:underline">Aftermath</a></li>
-            </ol>
-          </div>
 
           <section>
             <h2 id="p-forces" className="border-b border-border pb-2 text-2xl font-semibold">Opposing forces</h2>
