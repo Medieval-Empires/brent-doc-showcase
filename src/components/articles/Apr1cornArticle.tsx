@@ -32,8 +32,20 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
           </div>
         </header>
 
+        {/* Table of Contents */}
+        <div className="rounded-lg border border-border bg-card/50 p-6">
+          <h4 className="mb-2 text-xs uppercase tracking-wider text-accent">Table of Contents</h4>
+          <ol className="ml-5 list-decimal space-y-1 text-sm">
+            <li><a href="#early-life" className="text-accent hover:underline">Early Life: The Child Of The Athenian King</a></li>
+            <li><a href="#rise-byzantine" className="text-accent hover:underline">The Rise of the Byzantine Empire</a></li>
+            <li><a href="#reign-light" className="text-accent hover:underline">The Reign of Light (Present)</a></li>
+            <li><a href="#legacy" className="text-accent hover:underline">Legacy of Apr1c0rn</a></li>
+            <li><a href="#key-info" className="text-accent hover:underline">Key Information</a></li>
+          </ol>
+        </div>
+
         {/* Early Life */}
-        <section>
+        <section id="early-life">
           <h2 className="mb-3 font-serif text-2xl font-semibold">Early Life: The Child Of The Athenian King</h2>
           <p className="leading-relaxed text-muted-foreground">
             Born in the golden halls of the Athenian Acropolis on 31/8/2008, Apr1c0rn was the son of King Constantine the XII, a relatively small monarchy but one of the most influential and most culturally vibrant states. From childhood, Apr1c0rn was unlike others; he used to read about great warriors and kings such as Alexander the Great, Caesar, Cao Cao and many others. Through his voracious reading of all great conquerors, one was particularly his favorite: Justinian I, the one who faced many obstacles but with vision and strength, Apr1c0rn admired the strength and the vision as a leader; he faced many obstacles but he managed to unify the Byzantine Empire.
@@ -47,7 +59,7 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
         </section>
 
         {/* The Rise of the Byzantine Empire */}
-        <section>
+        <section id="rise-byzantine">
           <h2 className="mb-3 font-serif text-2xl font-semibold">The Rise of the Byzantine Empire</h2>
           <p className="leading-relaxed text-muted-foreground">
             At January 26th 2025, King Constantine XII died during the battle of Corinth, making his son Apr1c0rn, the king of Athens. In just 5 months, history turned once again after a global order paved the way for Apr1c0rn's greatest achievement: The restoration of the Byzantine Empire.
@@ -58,7 +70,7 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
         </section>
 
         {/* Coronation */}
-        <section>
+        <section id="reign-light">
           <h2 className="mb-3 font-serif text-2xl font-semibold">The Reign of Light (Present)</h2>
           <p className="leading-relaxed text-muted-foreground">
             After some outstanding efforts to reunite the empire, on October 8th 2025, in a grand coronation inside the very walls that his ancestors defended Europe in, king Apr1c0rn was crowned "Βασιλεύς τοῦ Βυζαντίου" emperor of the Byzantines.
@@ -72,7 +84,7 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
         </section>
 
         {/* Legacy */}
-        <section>
+        <section id="legacy">
           <h2 className="mb-3 font-serif text-2xl font-semibold">Legacy of Apr1c0rn</h2>
           <p className="leading-relaxed text-muted-foreground">
             Historians already call him "The Reforger" as he's the one who brought the Byzantine flame back to life in a world that forgotten his soul. Each evening, as the golden light of the setting sun glows upon the Byzantine Empire, the emperor likes to walk in his walls, gazing at the city below, proud, serene and eternal.
@@ -86,7 +98,7 @@ export const Apr1cornArticle = ({ onClose }: Apr1cornArticleProps) => {
         </section>
 
         {/* Key Facts */}
-        <section>
+        <section id="key-info">
           <h2 className="mb-3 font-serif text-2xl font-semibold">Key Information</h2>
           <ul className="space-y-2 text-muted-foreground">
             <li><b>Birth:</b> 31 August 2008, Athenian Acropolis</li>
