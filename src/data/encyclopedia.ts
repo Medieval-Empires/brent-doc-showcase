@@ -120,5 +120,60 @@ export const INDEX: EncyclopediaEntry[] = [
     result: "Emperor of the Byzantines",
     tags: ["Apr1c0rn", "Byzantine Empire", "Constantine XII", "Athens", "Strategos", "The Reforger", "Justinian I", "Hellenic Kingdom"],
     blurb: "Born in Athens, son of King Constantine XII; became Strategos at age 16; crowned Emperor of Byzantines on 8 October 2025; known as 'The Reforger' for restoring the Byzantine Empire."
+  },
+  {
+    id: "chronicle-oct12",
+    title: "Cymru Chronicle — 12 October 2025",
+    section: "article-chronicle-oct12",
+    date: "12 October 2025",
+    cat: "docs",
+    kicker: "Chronicles & Documents",
+    result: "Breaking news edition",
+    tags: ["Cymru Chronicle", "England-Wessex War", "Quebec Independence", "European Road Project", "Welsh Borders"],
+    blurb: "England-Wessex War erupts; King Evangelos launches campaign; Quebec declares independence from France; Great European Road Project announced; Welsh borders reopen."
+  },
+  {
+    id: "chronicle-oct13",
+    title: "Cymru Chronicle — 13 October 2025",
+    section: "article-chronicle-oct13",
+    date: "13 October 2025",
+    cat: "docs",
+    kicker: "Chronicles & Documents",
+    result: "Breaking news edition",
+    tags: ["Cymru Chronicle", "Russia-Poland Merge", "Byzantine Embargo", "Wessex", "Parthia", "floods"],
+    blurb: "Russia-Poland merge announced; Byzantine Empire declares embargo on Rome; Wessex demands reparations; devastating floods hit Parthia's Euphrates region."
+  },
+  {
+    id: "chronicle-oct14",
+    title: "Cymru Chronicle — 14 October 2025",
+    section: "article-chronicle-oct14",
+    date: "14 October 2025",
+    cat: "docs",
+    kicker: "Chronicles & Documents",
+    result: "Breaking news edition",
+    tags: ["Cymru Chronicle", "Byzantine Embargo", "Rome", "Mekanik", "peace", "apology"],
+    blurb: "Byzantine embargo on Rome lifted after diplomatic apology; Mekanik and Rome reach peaceful resolution; tensions in European continent ease."
+  },
+  {
+    id: "chronicle-oct15",
+    title: "Cymru Chronicle — 15 October 2025",
+    section: "article-chronicle-oct15",
+    date: "15 October 2025",
+    cat: "docs",
+    kicker: "Chronicles & Documents",
+    result: "Breaking news edition",
+    tags: ["Cymru Chronicle", "Treaty of Tirana", "Vinland", "Jeje200", "kidnapping", "Byzantine", "GSE", "Rome"],
+    blurb: "Treaty of Tirana signed establishing non-aggression pact; Vinland kidnaps French citizen Jeje200; Byzantine Empire, GSE, and Rome agree to peace terms."
+  },
+  {
+    id: "chronicle-oct16",
+    title: "Cymru Chronicle — 16 October 2025",
+    section: "article-chronicle-oct16",
+    date: "16 October 2025",
+    cat: "docs",
+    kicker: "Chronicles & Documents",
+    result: "Breaking news edition",
+    tags: ["Cymru Chronicle", "Wessex reparations", "Roman Tournament", "Jeje200 escape", "Japanese Unification", "Fintukani", "Anchovy", "marriage"],
+    blurb: "Wessex receives full reparations; Roman Empire announces Colosseum tournament; Jeje200 escapes Vinland captivity; Japanese unification completed; Prince Fintukani proposes to Princess Anchovy."
   }
 ];

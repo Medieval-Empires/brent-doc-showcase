@@ -16,6 +16,11 @@ import { IGCArticle } from "@/components/articles/IGCArticle";
 import { LeagueArticle } from "@/components/articles/LeagueArticle";
 import { NetherlandsArticle } from "@/components/articles/NetherlandsArticle";
 import { Apr1cornArticle } from "@/components/articles/Apr1cornArticle";
+import { ChronicleOct12Article } from "@/components/articles/ChronicleOct12Article";
+import { ChronicleOct13Article } from "@/components/articles/ChronicleOct13Article";
+import { ChronicleOct14Article } from "@/components/articles/ChronicleOct14Article";
+import { ChronicleOct15Article } from "@/components/articles/ChronicleOct15Article";
+import { ChronicleOct16Article } from "@/components/articles/ChronicleOct16Article";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -66,6 +71,16 @@ const Index = () => {
         return <NetherlandsArticle onClose={() => setSelectedArticle(null)} />;
       case "article-apr1corn":
         return <Apr1cornArticle onClose={() => setSelectedArticle(null)} />;
+      case "article-chronicle-oct12":
+        return <ChronicleOct12Article onClose={() => setSelectedArticle(null)} />;
+      case "article-chronicle-oct13":
+        return <ChronicleOct13Article onClose={() => setSelectedArticle(null)} />;
+      case "article-chronicle-oct14":
+        return <ChronicleOct14Article onClose={() => setSelectedArticle(null)} />;
+      case "article-chronicle-oct15":
+        return <ChronicleOct15Article onClose={() => setSelectedArticle(null)} />;
+      case "article-chronicle-oct16":
+        return <ChronicleOct16Article onClose={() => setSelectedArticle(null)} />;
       default:
         return null;
     }
