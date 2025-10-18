@@ -96,7 +96,7 @@ All colors MUST be HSL.
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url('/medieval-background.png');
+    background-image: url('./assets/medieval-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
